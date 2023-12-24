@@ -7,14 +7,22 @@
 </div>
 *
 */
-
-const head = React.createElement(
-    'div',
-    { id: "parent" },
-    [React.createElement('div',{ id: "child" },
-        [React.createElement('h1', {}, 'Im H1 tag'), React.createElement('h2', {}, 'Im H2 tag')]),
-    React.createElement('div',{ id: "child2" },
-        [React.createElement('h1', {}, 'Im H1 tag'), React.createElement('h2', {}, 'Im H2 tag')])]
+import React from "react";
+import ReactDOM from "react-dom/client";
+// const head = React.createElement(
+//     'div',
+//     { id: "parent" },
+//     [React.createElement('div',{ id: "child" },
+//         [React.createElement('h1', {}, 'Im H1 tag'), React.createElement('h2', {}, 'Im H2 tag')]),
+//     React.createElement('div',{ id: "child2" },
+//         [React.createElement('h1', {}, 'Im H1 tag'), React.createElement('h2', {}, 'Im H2 tag')])]
+// );
+const jsxHead = (
+  <div class="parent">
+    <div class="child">
+      <h1>'Im H1 tag</h1>
+    </div>
+  </div>
 );
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(head);
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(jsxHead);
