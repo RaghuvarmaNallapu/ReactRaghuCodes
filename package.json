@@ -2,8 +2,9 @@
   "name": "reactproject",
   "version": "1.0.0",
   "description": "namasthe react project",
-  "main": "app.js",
   "scripts": {
+    "start":"parcel index1.html",
+    "build":"parcel build index1.html",
     "test": "jest"
   },
   "repository": {
@@ -20,10 +21,14 @@
   },
   "homepage": "https://github.com/RaghuvarmaNallapu/ReactRaghuCodes#readme",
   "devDependencies": {
-    "parsel": "^0.3.0"
+    "parcel": "^2.10.3",
+    "process": "^0.11.10"
   },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
-  }
+  },
+  "browserslist":[
+    "last 69 versions"
+  ]
 }
